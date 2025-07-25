@@ -70,6 +70,34 @@ body {
 .nav-link {
   text-decoration: none;
 }
+/* banner style */
+.banner-container {
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  margin: 120px auto;
+  align-items: center;
+  gap: 20px;
+}
+.banner-left {
+  flex: 1;
+  gap: 13px;
+}
+.banner-title {
+  font-size: 4rem;
+  margin: 0;
+}
+.banner-img {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.banner-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
   /* navbar responsive */
