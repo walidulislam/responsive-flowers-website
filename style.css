@@ -152,6 +152,22 @@ body {
   text-wrap: nowrap;
   cursor: pointer;
 }
+/* plants lover section style */
+.plants-lover-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+  margin: 200px auto 130px;
+  gap: 60px;
+}
+.plants-lover-disc h2 {
+  font-size: 3.1rem;
+}
+.plants-lover-disc ul li {
+  margin-top: 20px;
+}
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
   /* navbar responsive */
@@ -218,5 +234,22 @@ body {
   .card button {
     padding: 20px 0;
     gap: 5px;
+  }
+  /* plants lover section responsive */
+  .plants-lover-container {
+    flex-direction: column;
+    margin: 35px 15px 130px;
+    gap: 0px;
+  }
+  .plants-lover-img {
+    width: auto;
+  }
+  .plants-lover-img img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .plants-lover-disc h2 {
+    font-size: 1.5rem;
   }
 }
