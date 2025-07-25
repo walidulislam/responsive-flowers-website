@@ -1,0 +1,98 @@
+/* inter font  */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* noto serif font  */
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/* full body style */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f8ff;
+  overflow-x: hidden;
+}
+
+/* shared style */
+.color-black {
+  color: 000000;
+}
+.color-orange {
+  color: #e95a08;
+}
+.discription-style {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+/* nav id */
+#home-item {
+  font-weight: 700;
+  color: rgba(37, 36, 50, 1);
+}
+#shop-about {
+  font-weight: 400;
+  color: rgba(137, 135, 161, 1);
+}
+#cart {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+/* header section..... */
+/* navbar style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.navbar-logo img {
+  width: 100%;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  font-size: 1rem;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+}
+/* responsive for mobile device */
+@media screen and (max-width: 576px) {
+  /* navbar responsive */
+  .navbar {
+    margin: 10px 0px 25px;
+  }
+  .navbar-logo {
+    min-width: 45px;
+    max-width: 100px;
+  }
+  .nav-links {
+    gap: 0;
+    padding: 0;
+    justify-content: flex-end;
+  }
+  #home-item,
+  #shop-about {
+    display: none;
+  }
+  #cart {
+    width: 113px;
+    display: flex;
+    padding-right: 10px;
+    gap: 10px;
+  }
+}
