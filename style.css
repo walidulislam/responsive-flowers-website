@@ -168,6 +168,21 @@ body {
 .plants-lover-disc ul li {
   margin-top: 20px;
 }
+/* challenge part badge style */
+.plants-lover-img {
+  position: relative;
+  display: inline-block;
+}
+.plants-lover-img img {
+  display: block;
+}
+.plants-lover-img .badge-img {
+  position: absolute;
+  top: -110px;
+  right: -100px;
+  width: 250px;
+  height: auto;
+}
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
   /* navbar responsive */
@@ -251,5 +266,9 @@ body {
   }
   .plants-lover-disc h2 {
     font-size: 1.5rem;
+  }
+  /* challenge part badge responsive */
+  .plants-lover-img .badge-img {
+    display: none;
   }
 }
