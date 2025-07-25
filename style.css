@@ -98,6 +98,60 @@ body {
   height: auto;
   display: block;
 }
+/* plants card style */
+.card-about {
+  max-width: 1140px;
+  margin: 0 auto 50px;
+  gap: 16px;
+  text-align: center;
+}
+.card-title {
+  font-size: 3.1rem;
+  margin: 0;
+}
+.card-discription {
+  padding: 0 120px;
+}
+/* cards */
+.cards-container {
+  max-width: 1140px;
+  margin: 0 auto 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: none;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.flower-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 30px auto 10px;
+}
+.flower-price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 10px auto 30px;
+}
+.card-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 26px 50px;
+  background-color: rgba(233, 90, 8, 1);
+  color: #ffffff;
+  border: none;
+  gap: 10px;
+  text-wrap: nowrap;
+  cursor: pointer;
+}
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
   /* navbar responsive */
@@ -145,5 +199,24 @@ body {
   }
   .discription-style {
     font-size: 1rem;
+  }
+  /* card section responsive */
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 14px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-discription {
+    padding: 0 35px;
+  }
+  .card button {
+    padding: 20px 0;
+    gap: 5px;
   }
 }
