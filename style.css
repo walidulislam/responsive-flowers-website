@@ -123,4 +123,27 @@ body {
     padding-right: 10px;
     gap: 10px;
   }
+  /* banner responsive */
+  .banner-container {
+    flex-direction: column-reverse;
+    margin: 50px auto;
+  }
+  .banner-img img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .banner-img {
+    width: auto;
+    margin: 28px 0;
+  }
+  .banner-left {
+    margin: 0 16px;
+  }
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  .discription-style {
+    font-size: 1rem;
+  }
 }
